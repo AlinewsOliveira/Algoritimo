@@ -1,0 +1,33 @@
+algoritmo "SuperContador"
+var
+    n, cont: inteiro
+inicio
+repita
+      escreval("=================")
+      escreval("|    M E N U    |")
+      escreval("=================")
+      escreval("| [1] De 1 a 10 |")
+      escreval("| [2] De 10 a 1 |")
+      escreval("| [3] Sair      |")
+      escreval("=================")
+
+
+      leia (n)
+      se (n = 1) entao
+          cont <- 1
+           repita
+             Escreval (cont,"..")
+             cont <- cont + 1
+           Ate (cont > 10)
+      fimse
+      
+      se (n = 2) entao
+          cont <- 10
+           repita
+             Escreval (cont,"..")
+             cont <- cont - 1
+           Ate (cont < 1)
+      fimse
+ate (n = 3)
+
+fimalgoritmo
